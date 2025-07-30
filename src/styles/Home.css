@@ -1,0 +1,107 @@
+.home-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #050505;
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #e21818;
+}
+
+/* Categories Section */
+.categories {
+  margin-bottom: 3rem;
+}
+
+.categories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #12b9be;
+  text-align: center;
+}
+
+.categories ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  background-color: #07e9de;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  border: 1px solid #07e9de;
+  transition: background-color 0.3s;
+}
+
+.categories li:hover {
+  background-color: #f5f4f3;
+  box-shadow: #07e9de;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #020202;
+  font-weight: 500;
+}
+
+/* Popular Books Section */
+.popular-books h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #12b9be;
+  text-align: center;
+}
+
+.popular-books ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.5rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.book-card {
+  width: 250px;
+  background-color: #8bf007;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(156, 238, 4, 0.788);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #05967e;
+}
+
+.book-card p {
+  margin: 0.3rem 0;
+  color: #dbf0c0;
+}
+
+.book-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #0a0a0a;
+  font-weight: bold;
+}

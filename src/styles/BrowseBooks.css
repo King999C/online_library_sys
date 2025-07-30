@@ -1,0 +1,145 @@
+/* .browse-container {
+  padding: 2rem;
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.book-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 220px;
+  background: #fafafa;
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 400px;
+} */
+
+
+/* Container styles */
+.browse-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.browse-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 0 auto 2rem auto;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Category Links */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-link {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: #005fa3;
+}
+
+/* Book List Grid */
+.book-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+/* Individual Book Card */
+.book-item {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.book-item h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.book-item p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+/* View Details Button */
+.view-details {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+  background-color: #218838;
+}
+
+/* No Books Found */
+.book-list p {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-style: italic;
+  color: #999;
+}
