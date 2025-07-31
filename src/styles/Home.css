@@ -84,7 +84,7 @@ h1 {
 }
 
 .book-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
 }
 
 .book-card h3 {

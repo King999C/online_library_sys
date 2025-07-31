@@ -1,9 +1,8 @@
 // src/pages/Home.jsx
-import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
-const categories = ["Fiction", "Non-Fiction", "Sci-Fi"];
+const categories = ["Fiction", "Non-Fiction", "Sci-fi"];
 
 const popularBooks = [
   {
@@ -12,8 +11,7 @@ const popularBooks = [
     author: "Frank Herbert",
     category: "Sci-fi",
     description: "A desert planet, a prophecy, and a young hero shaping the fate of the universe.",
-    rating: 4.8,
-    coverUrl: "https://covers.openlibrary.org/b/isbn/0441172717-M.jpg"
+    rating: 4.8
   },
   {
     id: 2,

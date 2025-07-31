@@ -1,11 +1,6 @@
 // src/pages/PageNotFound.jsx
-
-import React from 'react';
 import { Link } from 'react-router-dom';
-// import './PageNotFound.css';
 import "../styles/PageNotFound.css";
-
-// import '../styles/PageNotFound.css';
 
 const PageNotFound = () => {
   return (

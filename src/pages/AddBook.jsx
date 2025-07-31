@@ -1,41 +1,4 @@
-// // File: src/pages/AddBook.jsx
-// import React, { useState } from 'react'
-// import { useDispatch } from 'react-redux'
-// import { useNavigate } from 'react-router-dom'
-// import { addBook } from '../redux/booksSlice'
-
-// const AddBook = () => {
-//   const [form, setForm] = useState({ title: '', author: '', description: '', rating: '', category: '' })
-//   const dispatch = useDispatch()
-//   const navigate = useNavigate()
-
-//   const handleChange = e => {
-//     setForm({ ...form, [e.target.name]: e.target.value })
-//   }
-
-//   const handleSubmit = e => {
-//     e.preventDefault()
-//     if (Object.values(form).some(val => val === '')) return alert('All fields required')
-//     dispatch(addBook(form))
-//     navigate('/books')
-//   }
-
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <input name='title' placeholder='Title' onChange={handleChange} />
-//       <input name='author' placeholder='Author' onChange={handleChange} />
-//       <input name='description' placeholder='Description' onChange={handleChange} />
-//       <input name='rating' placeholder='Rating' onChange={handleChange} />
-//       <input name='category' placeholder='Category' onChange={handleChange} />
-//       <button type='submit'>Add Book</button>
-//     </form>
-//   )
-// }
-// export default AddBook
-
-
 // src/pages/AddBook.jsx
-import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/booksSlice';
 import { useNavigate } from 'react-router-dom';
@@ -48,8 +11,8 @@ const AddBook = () => {
   const [form, setForm] = useState({
     title: '',
     author: '',
-    description: '',
     category: '',
+    description: '',
     rating: ''
   });
 
@@ -76,7 +39,7 @@ const AddBook = () => {
       setErrors(validationErrors);
     } else {
       dispatch(addBook({ id: Date.now(), ...form }));
-      navigate('/browse');
+      navigate('/books');
     }
   };
 

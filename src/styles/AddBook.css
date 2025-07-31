@@ -1,53 +1,11 @@
-/* .add-book-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-.add-book-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.add-book-form input,
-.add-book-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
-
-.add-book-form button {
-  padding: 0.75rem 1.5rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.add-book-form button:hover {
-  background-color: #0056b3;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-} */
-
-
 /* Container styling */
 .container {
-  max-width: 600px;
+  justify-items: center;
+  width: 500px;
+  height: 600px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #f4f4f4;
+  background-color: #afec06;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -57,29 +15,31 @@
   text-align: center;
   margin-bottom: 2rem;
   font-size: 24px;
-  color: #333;
+  color: #ffffff;
 }
 
 /* Form styling */
 .form {
   display: flex;
   flex-direction: column;
+  width: 400px;
   gap: 1.2rem;
 }
 
 /* Label */
 .form label {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.3rem;
   display: block;
-  color: #444;
+  color: #000000;
 }
 
 /* Input */
 .form input {
+  align-content: center;
   padding: 0.7rem;
-  width: 100%;
-  border: 1px solid #ccc;
+  width: 50%;
+  border: 2px solid #191a19;
   border-radius: 5px;
   font-size: 1rem;
   transition: border 0.3s;
@@ -92,25 +52,28 @@
 
 /* Error message */
 .error {
-  color: red;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-  display: block;
+  color: rgb(252, 55, 6);
+  font-size: 0.97rem;
+  margin-top: 0.30rem;
+  margin-left: 0.60rem;
+  display: inline-block;
 }
 
 /* Submit button */
 .form button {
+  width: 200px;
   padding: 0.9rem;
-  background-color: #0077cc;
-  color: #fff;
+  background-color: #ffffff;
+  color: #04f8cf;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .form button:hover {
-  background-color: #005fa3;
+  background-color: #06fae6;
+  color: #fffefe;
 }

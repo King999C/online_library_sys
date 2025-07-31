@@ -7,8 +7,7 @@ const booksData = [
     author: "Frank Herbert",
     category: "Sci-fi",
     description: "A desert planet, a prophecy, and a young hero shaping the fate of the universe.",
-    rating: 4.8,
-    coverUrl: "https://covers.openlibrary.org/b/isbn/0441172717-M.jpg"
+    rating: 4.8
   },
   {
     id: 2,
@@ -401,7 +400,7 @@ const booksData = [
     category: "History",
     description: "Winston Churchill’s leadership during the darkest year of WWII.",
     rating: 4.7
-  }
+  },
 ];
 
 export default booksData;

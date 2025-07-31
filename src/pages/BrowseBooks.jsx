@@ -1,18 +1,21 @@
 // src/pages/BrowseBooks.jsx
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import booksData from "../data/books";
 import "../styles/BrowseBooks.css";
-// import booksData from "../data/books";
 
 const BrowseBooks = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const filteredBooks = booksData.filter(
-    (book) =>
-      book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      book.author.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+
+  const filteredBooks = booksData.filter((book) => {
+  const matchesSearch = book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                        book.author.toLowerCase().includes(searchTerm.toLowerCase());
+
+  const matchesCategory = selectedCategory === "All" || book.category === selectedCategory;
+
+  return matchesSearch && matchesCategory;
+});
 
   const categories = [
     ...new Set(booksData.map((book) => book.category))
@@ -31,9 +34,15 @@ const BrowseBooks = () => {
 
       <div className="category-filters">
         {categories.map((cat, i) => (
-          <Link key={i} to={`/Books/${cat}`} className="category-link">
+          <button
+            key={i}
+            onClick={() => setSelectedCategory(cat)}
+            className={`category-link ${
+              selectedCategory === cat ? "active" : ""
+            }`}
+          >
             {cat}
-          </Link>
+          </button>
         ))}
       </div>
 
