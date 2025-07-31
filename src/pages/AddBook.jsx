@@ -1,4 +1,6 @@
+
 // src/pages/AddBook.jsx
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/booksSlice';
 import { useNavigate } from 'react-router-dom';
@@ -11,8 +13,8 @@ const AddBook = () => {
   const [form, setForm] = useState({
     title: '',
     author: '',
-    category: '',
     description: '',
+    category: '',
     rating: ''
   });
 
