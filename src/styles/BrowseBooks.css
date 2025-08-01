@@ -11,7 +11,7 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #8aec09;
+  color: #ec3e09;
 }
 
 /* Search Bar */
@@ -24,12 +24,12 @@
   border-radius: 8px;
   margin: 0 auto 2rem auto;
   display: block;
-  box-shadow: 0 2px 6px rgba(171, 243, 2, 0.699);
+  box-shadow: 0 2px 6px rgba(243, 18, 2, 0.699);
   transition: border-color 0.3s ease;
 }
 
 .search-bar:focus {
-  border-color: #30cc00;
+  border-color: #e91203;
   outline: none;
 }
 
@@ -38,22 +38,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 2rem;
+  
 }
 
 .category-link {
-  background-color: #6dcc00;
+  background-color: #34382f;
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
 .category-link:hover {
-  background-color: #005fa3;
+  background-color: #343c42;
 }
 
 /* Book List Grid */
@@ -70,11 +71,11 @@
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(194, 6, 6, 0.801);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.2s ease;
 }
 
 .book-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-20px);
   box-shadow: 0 6px 14px rgba(197, 8, 8, 0.938);
 }
 

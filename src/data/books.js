@@ -1,4 +1,5 @@
 // src/data/books.js
+import defaultCover from '../assets/default-cover.jpg';
 
 const booksData = [
   {
@@ -7,7 +8,8 @@ const booksData = [
     author: "Frank Herbert",
     category: "Sci-fi",
     description: "A desert planet, a prophecy, and a young hero shaping the fate of the universe.",
-    rating: 4.8
+    rating: 4.8,
+    coverImage: defaultCover
   },
   {
     id: 2,
@@ -15,7 +17,8 @@ const booksData = [
     author: "William Gibson",
     category: "Sci-fi",
     description: "A hacker is hired for one last job in a cyberpunk world of AIs and megacorporations.",
-    rating: 4.4
+    rating: 4.4,
+    coverImage: defaultCover
   },
   {
     id: 3,
@@ -23,7 +26,8 @@ const booksData = [
     author: "Isaac Asimov",
     category: "Sci-fi",
     description: "A mathematician develops psychohistory to save a crumbling Galactic Empire.",
-    rating: 4.6
+    rating: 4.6,
+    coverImage: defaultCover
   },
   {
     id: 4,

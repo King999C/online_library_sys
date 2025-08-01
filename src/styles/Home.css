@@ -10,7 +10,7 @@ h1 {
   font-size: 4.5rem;
   text-align: center;
   margin-bottom: 4rem;
-  color: #e21818;
+  color: #97f302;
 }
 
 /* Categories Section */
@@ -74,17 +74,18 @@ h1 {
 
 .book-card {
   width: 250px;
-  background-color: #8bf007;
-  border: 1px solid #000000;
+  background-color: #000000;
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 2px 5px rgba(156, 238, 4, 0.788);
+  box-shadow: 0 2px 5px rgba(134, 248, 3, 0.993);
   text-align: left;
   transition: transform 0.3s ease;
 }
 
 .book-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-20px);
+  box-shadow: 0 2px 5px rgb(250, 2, 2);
+  outline: none;
 }
 
 .book-card h3 {
@@ -102,6 +103,15 @@ h1 {
   display: inline-block;
   margin-top: 0.5rem;
   text-decoration: none;
-  color: #0a0a0a;
+  color: #f50808;
   font-weight: bold;
+}
+
+.book-thumbnail {
+  display: block;
+  width: 190px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 10px auto; /* Center horizontally + spacing below */
 }

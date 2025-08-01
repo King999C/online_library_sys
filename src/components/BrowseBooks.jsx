@@ -35,14 +35,11 @@ const BrowseBooks = () => {
 
       <div className="category-filters">
         {categories.map((cat, i) => (
-          
-          <button
-            key={i}
+          <button key={i}
             onClick={() => setSelectedCategory(cat)}
             className={`category-link ${
               selectedCategory === cat ? "active" : ""
-            }`}
-          >
+            }`} >
             {cat}
           </button>
         ))}

@@ -5,6 +5,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import '../styles/BookDetails.css';
+import defaultCover from '../assets/default-cover.jpg'; // ✅ Step 1: import fallback image
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -16,9 +17,12 @@ const BookDetails = () => {
     return <div className="book-details-container">Book not found.</div>;
   }
 
-  return (
+   const coverImage = book.coverImage ? book.coverImage : defaultCover;
+  
+   return (
     <div className="book-details-container">
-      <img src={book.coverImage} alt={`${book.title} cover`} className="book-cover" />
+      {/* <img src={book.coverImage} alt={`${book.title} cover`} className="book-cover" /> */}
+      <img src={coverImage} alt={`${book.title} cover`} className="book-cover" />
       <h2>{book.title}</h2>
       <p>
         <strong>Author:</strong> {book.author}

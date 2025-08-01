@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
+import defaultCover from "../assets/default-cover.jpg";
 
 const categories = ["Fiction", "Non-Fiction", "Sci-fi"];
 
@@ -12,7 +13,8 @@ const popularBooks = [
     author: "Frank Herbert",
     category: "Sci-fi",
     description: "A desert planet, a prophecy, and a young hero shaping the fate of the universe.",
-    rating: 4.8
+    rating: 4.8,
+    coverImage: defaultCover
   },
   {
     id: 2,
@@ -20,7 +22,8 @@ const popularBooks = [
     author: "William Gibson",
     category: "Sci-fi",
     description: "A hacker is hired for one last job in a cyberpunk world of AIs and megacorporations.",
-    rating: 4.4
+    rating: 4.4,
+    coverImage: defaultCover
   },
   {
     id: 3,
@@ -28,7 +31,8 @@ const popularBooks = [
     author: "Isaac Asimov",
     category: "Sci-fi",
     description: "A mathematician develops psychohistory to save a crumbling Galactic Empire.",
-    rating: 4.6
+    rating: 4.6,
+    coverImage: defaultCover
   },
   {
     id: 4,
@@ -36,7 +40,8 @@ const popularBooks = [
     author: "Neal Stephenson",
     category: "Sci-fi",
     description: "Pizza delivery, sword fights, and virtual reality collide in this dystopian satire.",
-    rating: 4.2
+    rating: 4.2,
+    coverImage: defaultCover
   },
   {
     id: 5,
@@ -44,7 +49,8 @@ const popularBooks = [
     author: "Andy Weir",
     category: "Sci-fi",
     description: "An astronaut is stranded on Mars and must use science to survive.",
-    rating: 4.7
+    rating: 4.7,
+    coverImage: defaultCover
   },
   {
     id: 6,
@@ -52,7 +58,8 @@ const popularBooks = [
     author: "Orson Scott Card",
     category: "Sci-fi",
     description: "A child genius is trained to lead Earth's defense against alien invaders.",
-    rating: 4.6
+    rating: 4.6,
+    coverImage: defaultCover
   },
   {
     id: 7,
@@ -60,7 +67,8 @@ const popularBooks = [
     author: "Dan Simmons",
     category: "Sci-fi",
     description: "Seven pilgrims travel to the distant world of Hyperion to face a deadly mystery.",
-    rating: 4.5
+    rating: 4.5,
+    coverImage: defaultCover
   },
   {
     id: 8,
@@ -68,7 +76,8 @@ const popularBooks = [
     author: "Ursula K. Le Guin",
     category: "Sci-fi",
     description: "An envoy explores a planet where gender is fluid, challenging his worldview.",
-    rating: 4.4
+    rating: 4.4,
+    coverImage: defaultCover
   },
   {
     id: 9,
@@ -76,7 +85,8 @@ const popularBooks = [
     author: "Ernest Cline",
     category: "Sci-fi",
     description: "A teen hunts for an Easter egg in a VR world filled with 80s nostalgia.",
-    rating: 4.3
+    rating: 4.3,
+    coverImage: defaultCover
   },
 ];
 
@@ -100,6 +110,7 @@ const Home = () => {
         <ul>
           {popularBooks.map((book) => (
             <li key={book.id} className="book-card">
+              <img src={book.coverImage} alt={`${book.title} cover`} className="book-thumbnail" />
               <h3>{book.title}</h3>
               <p>Author: {book.author}</p>
               <p>Rating: {book.rating}</p>

@@ -1,12 +1,13 @@
 // File: src/App.jsx
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import BrowseBooks from './pages/BrowseBooks'
-import BookDetails from './pages/BookDetails'
-import AddBook from './pages/AddBook'
-import NotFound from './pages/NotFound'
-import Navbar from './components/Navbar'
+import Home from './components/Home'
+import BrowseBooks from './components/BrowseBooks'
+import BookDetails from './components/BookDetails'
+import AddBook from './components/AddBook'
+import NotFound from './components/NotFound'
+import Navbar from './pages/header'
+import Footer from './pages/footer'
 
 const App = () => (
   <>
@@ -19,6 +20,7 @@ const App = () => (
       <Route path='/add-book' element={<AddBook />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
+    <Footer />
   </>
 )
 export default App
